@@ -22,7 +22,7 @@
         "children": [],
         "isRemovable": true,
         "filePath": "CreateProject/lambda.js",
-        "code": "let AWS = require('aws-sdk');\nconst cognito_idp = new AWS.CognitoIdentityServiceProvider();\n\nexports.handler = function (event, context, callback) {\n    cognito_idp.listUsers({\n        UserPoolId: \"us-east-1_uVXTQInep\",\n        Limit: \"10\"\n    }, function (error, data) {\n        if (error) {\n            // implement error handling logic here\n            throw error;\n        }\n        // your logic goes within this block\n    });\n\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
+        "code": "let AWS = require('aws-sdk');\nconst cognito_idp = new AWS.CognitoIdentityServiceProvider();\n\nexports.handler = function (event, context, callback) {\n\n    callback(null, { \"message\": \"Successfully executed\" });\n}",
         "triggers": [],
         "config": {
           "runtime": "nodejs8.10",
@@ -332,7 +332,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1542111732231,
+    "lastSave": 1542111759021,
     "platformRegions": {
       "AWS": "us-east-2"
     }
