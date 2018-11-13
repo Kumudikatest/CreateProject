@@ -8,7 +8,8 @@
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "58bdc596-a5b4-44d0-ba93-31e397638ee1"
+          "58bdc596-a5b4-44d0-ba93-31e397638ee1",
+          "1ac04347-1869-4baf-925c-227d35468803"
         ],
         "isRemovable": false,
         "filePath": "CreateProject"
@@ -29,14 +30,32 @@
           "timeout": 60,
           "memory": 128
         }
+      },
+      "1ac04347-1869-4baf-925c-227d35468803": {
+        "id": "1ac04347-1869-4baf-925c-227d35468803",
+        "parent": "0ce9ee9d-2f55-4a8c-821d-7f683113b48b",
+        "name": "new.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "CreateProject/new.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
       }
     },
     "deletedFiles": [],
     "rootNode": "0ce9ee9d-2f55-4a8c-821d-7f683113b48b",
     "openFiles": [
-      "58bdc596-a5b4-44d0-ba93-31e397638ee1"
+      "58bdc596-a5b4-44d0-ba93-31e397638ee1",
+      "1ac04347-1869-4baf-925c-227d35468803"
     ],
-    "currentFileId": "58bdc596-a5b4-44d0-ba93-31e397638ee1",
+    "currentFileId": "1ac04347-1869-4baf-925c-227d35468803",
     "resources": {},
     "envVariables": [
       {
@@ -59,7 +78,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1542106681500,
+    "lastSave": 1542106713166,
     "platformRegions": {
       "AWS": "us-east-2"
     }
