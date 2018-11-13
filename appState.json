@@ -31,9 +31,7 @@
         }
       }
     },
-    "deletedFiles": [
-      "CreateProject/new.js"
-    ],
+    "deletedFiles": [],
     "rootNode": "0ce9ee9d-2f55-4a8c-821d-7f683113b48b",
     "openFiles": [
       "58bdc596-a5b4-44d0-ba93-31e397638ee1"
@@ -61,7 +59,7 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1542111282434,
+    "lastSave": 1542111392907,
     "platformRegions": {
       "AWS": "us-east-2"
     }
