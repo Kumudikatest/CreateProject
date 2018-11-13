@@ -1,1 +1,74 @@
-{"EDITOR_STATE":{"allProjectFiles":{"c436185d-36b9-4bb3-98d9-c253d115be28":{"id":"c436185d-36b9-4bb3-98d9-c253d115be28","parent":null,"name":"CreateProject","type":"DIRECTORY","isDirectory":true,"children":["b7891d93-824d-43b0-9748-782c78ccc720"],"isRemovable":false,"filePath":"CreateProject"},"b7891d93-824d-43b0-9748-782c78ccc720":{"id":"b7891d93-824d-43b0-9748-782c78ccc720","parent":"c436185d-36b9-4bb3-98d9-c253d115be28","name":"lambda.js","type":"LAMBDA_FILE","isDirectory":false,"children":[],"isRemovable":true,"filePath":"CreateProject/lambda.js","code":"let AWS = require('aws-sdk');\n\nexports.handler = function(event, context, callback) {\n    \n    callback(null,'Successfully executed');\n}","triggers":[{"resourceName":"apigusEast1GDPTeststorageget","config":{}}],"config":{"memory":128,"timeout":60,"runtime":"nodejs8.10"}}},"deletedFiles":[],"rootNode":"c436185d-36b9-4bb3-98d9-c253d115be28","openFiles":["b7891d93-824d-43b0-9748-782c78ccc720"],"currentFileId":"b7891d93-824d-43b0-9748-782c78ccc720","resources":{"apigusEast1GDPTeststorageget":{"name":"apigusEast1GDPTeststorageget","type":"API_GATEWAY","config":{"selectedRegion":"us-east-1","apiMode":1,"apiName":"GDP_Test","apiId":"056l1byhee","endpointType":"EDGE","rootResourceId":"oeo9op5q38","existingResources":{"/storage":"53xlzu","/pubsub":"j1xwrt","/":"oeo9op5q38"},"resourceMode":1,"resourcePath":"/storage","resourceName":"storage","resourceId":"53xlzu","restMethod":"GET","proxyIntegration":false,"enableCORS":false,"stageMode":1,"stageName":"Prod","stageDeploymentId":"lf0dmx"},"globallyEditable":true}},"envVariables":[{"lambdaId":"all","varKey":"SIGMA_AWS_ACC_ID","varValue":null,"shouldPersist":false,"displayOnly":false,"editable":false}],"packageJSON":{"dependencies":{"aws-sdk":{"name":"aws-sdk","version":"2.176.0","notRemovable":true}}},"lambdaId":"b7891d93-824d-43b0-9748-782c78ccc720"},"PROJECT_META":{"projectName":"CreateProject","projectDescription":"Description","projectVersion":"2.0.0","projectRegion":"us-east-1"},"VCS_STATE":{"provider":"GitHub","repo":{"name":"CreateProject","url":"https://github.com/Kumudikatest/CreateProject"}}}
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "0ce9ee9d-2f55-4a8c-821d-7f683113b48b": {
+        "id": "0ce9ee9d-2f55-4a8c-821d-7f683113b48b",
+        "parent": null,
+        "name": "CreateProject",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "58bdc596-a5b4-44d0-ba93-31e397638ee1"
+        ],
+        "isRemovable": false,
+        "filePath": "CreateProject"
+      },
+      "58bdc596-a5b4-44d0-ba93-31e397638ee1": {
+        "id": "58bdc596-a5b4-44d0-ba93-31e397638ee1",
+        "parent": "0ce9ee9d-2f55-4a8c-821d-7f683113b48b",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "CreateProject/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "0ce9ee9d-2f55-4a8c-821d-7f683113b48b",
+    "openFiles": [
+      "58bdc596-a5b4-44d0-ba93-31e397638ee1"
+    ],
+    "currentFileId": "58bdc596-a5b4-44d0-ba93-31e397638ee1",
+    "resources": {},
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    },
+    "lambdaId": "58bdc596-a5b4-44d0-ba93-31e397638ee1"
+  },
+  "PROJECT_META": {
+    "projectName": "CreateProject",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "lastSave": 1542106681500,
+    "platformRegions": {
+      "AWS": "us-east-2"
+    }
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "CreateProject",
+      "url": "https://github.com/Kumudikatest/CreateProject"
+    }
+  }
+}
